@@ -27,11 +27,11 @@ class Owner
   end
   
   def cats
-    Cat.each {|cat| cat.owner == self}
+    cat.all.each {|cat| cat.owner == self}
   end
    
   def dogs
-    Dog.each {|dog| dog.owner == self}
+    dog.all.each {|dog| dog.owner == self}
   end
   
 end
