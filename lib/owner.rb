@@ -34,8 +34,8 @@ class Owner
     Dog.each {|dog| dog.owner == self}
   end
   
-  def buy_cat
-    
+  def buy_cat(name)
+    pets[:cats] << Cat.new(name)
   end
 
 end
