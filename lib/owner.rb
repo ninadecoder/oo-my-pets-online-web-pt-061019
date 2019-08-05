@@ -27,7 +27,7 @@ class Owner
   end
   
   def cats
-    Cat.all.each {|cat| cat.owner == owner}
+    Cat.all.each {|cat| cat.name == cat.owner}
   end
    
   def dogs
