@@ -27,7 +27,7 @@ class Owner
   end
   
   def cats
-    Cat.all.each {|cat| puts cat}
+    Cat.all.each {|cat| cat == cat.owner}
   end
    
   def dogs
