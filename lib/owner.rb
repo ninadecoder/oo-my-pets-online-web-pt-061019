@@ -62,8 +62,7 @@ class Owner
   end
   
   def list_pets
-    Cat.all
-    Dog.all
+    "I have #{"
   end
   
 end
